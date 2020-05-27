@@ -59,3 +59,9 @@ Masterfile 主卷表
 MasterfileID 主卷主键
 PaperID 试卷外键
 TopicID 题目外键
+
+
+Masterfile 主卷表
+MasterfileID 主卷主键
+PaperID 试卷外键
+TopicID 题目外键
