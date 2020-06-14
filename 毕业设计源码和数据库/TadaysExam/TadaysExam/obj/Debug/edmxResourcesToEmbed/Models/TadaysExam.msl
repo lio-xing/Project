@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TodaysExamDBModelStoreContainer" CdmEntityContainer="TodaysExamDBEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+          <ScalarProperty Name="AdminLoginName" ColumnName="AdminLoginName" />
+          <ScalarProperty Name="AdminLoginPwd" ColumnName="AdminLoginPwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asnwer">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Asnwer">
+        <MappingFragment StoreEntitySet="Asnwer">
+          <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="StuID" ColumnName="StuID" />
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="AnswerScore" ColumnName="AnswerScore" />
+          <ScalarProperty Name="AnswerTime" ColumnName="AnswerTime" />
+          <ScalarProperty Name="SubmitTime" ColumnName="SubmitTime" />
+          <ScalarProperty Name="BatchTime" ColumnName="BatchTime" />
+          <ScalarProperty Name="AnswerState" ColumnName="AnswerState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detail">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Detail">
+        <MappingFragment StoreEntitySet="Detail">
+          <ScalarProperty Name="DetailID" ColumnName="DetailID" />
+          <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="DetailAnswer" ColumnName="DetailAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Masterfile">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Masterfile">
+        <MappingFragment StoreEntitySet="Masterfile">
+          <ScalarProperty Name="MasterfileID" ColumnName="MasterfileID" />
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paper">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Paper">
+        <MappingFragment StoreEntitySet="Paper">
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="PaperName" ColumnName="PaperName" />
+          <ScalarProperty Name="PaperExplain" ColumnName="PaperExplain" />
+          <ScalarProperty Name="PaperTime" ColumnName="PaperTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StuID" ColumnName="StuID" />
+          <ScalarProperty Name="StuName" ColumnName="StuName" />
+          <ScalarProperty Name="StuLoginName" ColumnName="StuLoginName" />
+          <ScalarProperty Name="StuLoginPwd" ColumnName="StuLoginPwd" />
+          <ScalarProperty Name="StuSex" ColumnName="StuSex" />
+          <ScalarProperty Name="StuPhone" ColumnName="StuPhone" />
+          <ScalarProperty Name="StuEmail" ColumnName="StuEmail" />
+          <ScalarProperty Name="StuGrade" ColumnName="StuGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teacher">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="TeacherID" ColumnName="TeacherID" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="TeacherLoginName" ColumnName="TeacherLoginName" />
+          <ScalarProperty Name="TeacherLoginPwd" ColumnName="TeacherLoginPwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topic">
+      <EntityTypeMapping TypeName="TodaysExamDBModel.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="TopicExplain" ColumnName="TopicExplain" />
+          <ScalarProperty Name="TopicScore" ColumnName="TopicScore" />
+          <ScalarProperty Name="TopicType" ColumnName="TopicType" />
+          <ScalarProperty Name="TopicA" ColumnName="TopicA" />
+          <ScalarProperty Name="TopicB" ColumnName="TopicB" />
+          <ScalarProperty Name="TopicC" ColumnName="TopicC" />
+          <ScalarProperty Name="TopicD" ColumnName="TopicD" />
+          <ScalarProperty Name="TopicSort" ColumnName="TopicSort" />
+          <ScalarProperty Name="TopicAnswer" ColumnName="TopicAnswer" />
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
